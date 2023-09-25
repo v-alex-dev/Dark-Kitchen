@@ -6,11 +6,14 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
+    .logo-header{
+        position: absolute;
+        width: 12em;
+    }
     .burger-menu{
         position: absolute;
-        right: 5%;
-        top: 3%;
+        right: 4%;
+        top: 30px;
     }
     h1{
         font-size: 35px;

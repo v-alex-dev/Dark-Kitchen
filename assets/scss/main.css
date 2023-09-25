@@ -69,10 +69,14 @@ header {
   background-size: cover;
   background-position: center;
 }
+header .logo-header {
+  position: absolute;
+  width: 12em;
+}
 header .burger-menu {
   position: absolute;
-  right: 5%;
-  top: 3%;
+  right: 4%;
+  top: 30px;
 }
 header h1 {
   font-size: 35px;
