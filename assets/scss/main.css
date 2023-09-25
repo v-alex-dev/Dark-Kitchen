@@ -50,4 +50,17 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-footer {
+  text-align: center;
+}
+
+.title-news {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
