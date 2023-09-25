@@ -1,0 +1,1 @@
+import { DishesList } from "./data/Dishes-list.js";
