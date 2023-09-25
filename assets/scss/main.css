@@ -52,14 +52,31 @@ table {
   border-spacing: 0;
 }
 
-header nav {
-  text-align: center;
+header .navigate {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 }
-header nav a {
+header .navigate.active {
+  display: flex;
+}
+header .navigate a {
+  padding: 10px;
+  text-align: center;
   text-decoration: none;
-  margin: 1.5%;
-  color: #f5f5f5;
-  font-size: 0.8em;
+  color: #333;
+}
+header .burger-menu {
+  position: absolute;
+  right: 4%;
+  top: 30px;
+  display: block;
+  cursor: pointer;
 }
 
 header {
@@ -72,11 +89,6 @@ header {
 header .logo-header {
   position: absolute;
   width: 12em;
-}
-header .burger-menu {
-  position: absolute;
-  right: 4%;
-  top: 30px;
 }
 header h1 {
   font-size: 35px;

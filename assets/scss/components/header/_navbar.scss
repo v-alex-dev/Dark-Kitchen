@@ -1,12 +1,29 @@
 header{
-    nav{
-        text-align: center;
+    .navigate{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        &.active {
+            display: flex;
+        }
         
         a{
+            padding: 10px;
+            text-align: center;
             text-decoration: none;
-            margin: 1.5%;
-            color: $primary-white;
-            font-size: 0.8em;
+            color: #333;
         }
+    }
+    .burger-menu{
+        position: absolute;
+        right: 4%;
+        top: 30px;
+        display: block;
+        cursor: pointer;
     }
 }
