@@ -11,10 +11,7 @@ const cardList = (item) => {
 	price.className = 'price';
 	btnShop.className = 'btn-shop';
 	btnShop.innerHTML = 'add'
-	
-	console.log(item);
 
-	
 	//create header to card with card-header className
 	const cardHeader = document.createElement('div');
 	cardHeader.className = 'card-header';
