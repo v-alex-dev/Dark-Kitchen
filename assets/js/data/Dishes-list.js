@@ -130,7 +130,7 @@ const DishesList = [
 	{
 		id:17,
 		name: 'Spring Rolls Tuna Advocado',
-		category: ['Maki', 'California'],
+		category: ['Maki', 'Springs Rolls'],
 		ingredient : ['Advocado', 'Tuna', 'Salad'],
 		url: '../img/Dishes/spring-rolls-adv-tuna.png',
 		price : 6.40
@@ -139,17 +139,57 @@ const DishesList = [
 		id:18,
 		name: 'Temaki shrimps advocado',
 		category: ['Temaki'],
-		ingredient : ['Advocado', 'Tuna', 'Salad'],
-		url: '../img/Dishes/spring-rolls-adv-tuna.png',
+		ingredient : ['Advocado', 'shrimps'],
+		url: '../img/Dishes/tem-shri-adv.png',
 		price : 7.10
 	},
 	{
 		id:19,
-		name: 'Temaki shrimps advocado',
+		name: 'Temaki Egg Salmon',
 		category: ['Temaki'],
-		ingredient : ['Advocado', 'Tuna', 'Salad'],
-		url: '../img/Dishes/spring-rolls-adv-tuna.png',
-		price : 7.10
+		ingredient : ['Egg', 'Salmon'],
+		url: '../img/Dishes/tem-egg-sal.png',
+		price : 7.20
+	},
+	{
+		id:20,
+		name: 'Sashimi assortiment',
+		category: ['Sashimi'],
+		ingredient : ['Tuna', 'Salmon', 'Shrimps', 'Surimi'],
+		url: '../img/Dishes/sashimi.png',
+		price : 15.80
+	},
+	{
+		id:21,
+		name: 'BOX 1',
+		category: ['BOX', 'Maki', 'California'],
+		ingredient : ['Salmon', 'Tuna', 'Advocado', 'Cheese'],
+		url: '../img/Dishes/box-1.png',
+		price : 12.80
+	},
+	{
+		id:21,
+		name: 'BOX 2',
+		category: ['BOX', 'Sushi'],
+		ingredient : ['Salmon'],
+		url: '../img/Dishes/box-2.png',
+		price : 14.80
+	},
+	{
+		id:22,
+		name: 'BOX 3',
+		category: ['BOX', 'Maki','Spring Rolls', 'California'],
+		ingredient : ['Salmon', 'Salad', 'Tuna', 'Advocado'],
+		url: '../img/Dishes/box-3.png',
+		price : 16.50
+	},
+	{
+		id:23,
+		name: 'BOX 4',
+		category: ['BOX', 'Sushi', 'Sashimi','Spring Rolls', 'Maki', 'California'],
+		ingredient : ['Salmon','Tuna','Salad','Advocado' ],
+		url: '../img/Dishes/box-4.png',
+		price : 18.10
 	},
 ]
 
