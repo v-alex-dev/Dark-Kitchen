@@ -119,4 +119,17 @@ header p {
   margin: 1em 5%;
   color: #f5f5f5;
   font-family: "Crimson Text", serif;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-footer {
+  text-align: center;
+}
+
+.title-news {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
