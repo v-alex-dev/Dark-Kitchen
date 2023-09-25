@@ -3,6 +3,7 @@
 
 // Attention à l'ordre des imports (ex : ne pas mettre un fichiers qui a besoins des variables avant l'import de celles-ci
 @import './vendors/reset';
+@import './utils/typographie';
 @import './utils/variables';
 @import './utils/mixins';
 @import './base/base.scss';

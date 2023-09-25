@@ -52,15 +52,78 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: "ichikaru";
+  src: url(.../../fonts/ICHIKARU.otf) format("opentype");
+}
+@font-face {
+  font-family: "mondayCoffee";
+  src: url(../../fonts/MondayCoffee.otf);
+}
 footer {
   display: flex;
   flex-direction: column;
 }
 
-.logo-footer {
-  text-align: center;
+#Nav-footer {
+  padding-top: 2rem;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-bottom: 50px;
 }
 
-.title-news {
+.logo-footer {
   text-align: center;
+  padding-bottom: 1rem;
+}
+
+#title-news {
+  text-align: center;
+  padding-bottom: 5px;
+  font-size: 20px;
+  border-bottom: 1px solid black;
+}
+
+#my-order, #food, #about, #contact {
+  text-decoration: none;
+  font-style: none;
+  color: black;
+}
+
+#copyright {
+  padding-top: 1rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+.container-media-footer {
+  padding-top: 1rem;
+  margin: 1rem;
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.news-content {
+  margin: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.Newsletter {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.instagram, .facebook, .takeaway, .ubereats {
+  width: 25px;
 }/*# sourceMappingURL=main.css.map */

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/main.css">
     <script type="module" defer src="./js/script.js"></script>
     <title>Dark kitchen</title>
 </head>
@@ -17,44 +18,47 @@
         </picture>
         <ul id = "Nav-footer">
             <li>
-            <a href="">My orders</a>
+            <a id="my-order" href="">My orders</a>
             </li>
             <li>
-            <a href="">Food</a>
+            <a id="food" href="">Food</a>
             </li>
             <li>
-            <a href="">About</a>
+            <a id="about" href="">About</a>
             </li>
             <li>
-            <a href="">Contact</a>
+            <a id="contact" href="">Contact</a>
             </li>
         </ul>
         <div class="Newsletter">
             <h4 id="title-news">Newsletter</h4>
-            <p id="desc-news">Enter your email for subscribe to Newsletter</p>
-            <input type="text">
-            <input type="submit">
+            <section class='news-content'>
+                <p id="desc-news">Enter your email for subscribe to Newsletter</p>
+                <div class="email">
+                    <input class="input-email" type="text">
+                    <input class="btn-footer" type="submit">
+                </div>
+            </section>
+            <div class="container-media-footer">
+                <picture id="media-footer">
+                    <source class="facebook" srcset="./img/social-logo/facebook-black.svg">
+                    <img class="facebook" src="./img/social-logo/facebook-black.svg">
+                </picture>
+                <picture class="media-footer">
+                    <source class="instagram" srcset="./img/social-logo/instagram-black.svg">
+                    <img class="instagram" src="./img/social-logo/instagram-black.svg">
+                </picture>
+                <picture class="media-footer">
+                    <source class="takeaway" srcset="./img/social-logo/takeaway-black.svg">
+                    <img class="takeaway" src="./img/social-logo/takeaway-black.svg">
+                </picture>
+                <picture class="media-footer">
+                    <source class="ubereats" srcset="./img/social-logo/ubereats-black.svg">
+                    <img class="ubereats" src="./img/social-logo/ubereats-black.svg">
+                </picture>
+            </div>
         </div>
-        <div class="container-media-footer">
-            <picture id="media-footer">
-                <source class="facebook" srcset="./img/social-logo/facebook-black.svg" width="50px">
-                <img class="facebook" src="./img/social-logo/facebook-black.svg">
-            </picture>
-            <picture class="media-footer">
-                <source class="instagram" srcset="./img/social-logo/instagram-black.svg" width="50px">
-                <img class="instagram" src="./img/social-logo/instagram-black.svg">
-            </picture>
-            <picture class="media-footer">
-                <source class="takeaway" srcset="./img/social-logo/takeaway-black.svg" width="50px">
-                <img src="./img/social-logo/takeaway-black.svg">
-            </picture>
-            <picture class="media-footer">
-                <source class="ubereats" srcset="./img/social-logo/ubereats-black.svg" width="50px">
-                <img src="./img/social-logo/ubereats-black.svg">
-            </picture>
-        </div>
-        <p>© Copyright 2023 Japanese Vens. Tous droits réservés.</p>
-
+        <p id="copyright">© Copyright 2023 Japanese Vens. Tous droits réservés.</p>
     </footer>
 </body>
 </html>
