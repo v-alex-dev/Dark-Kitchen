@@ -11,7 +11,6 @@ header{
         &.active {
             display: flex;
         }
-        
         a{
             padding: 10px;
             text-align: center;
@@ -25,5 +24,26 @@ header{
         top: 30px;
         display: block;
         cursor: pointer;
+    }
+}
+
+@include responsive-desktop {
+    header{
+        .burger-menu{
+            display: none;
+        }
+        .navigate{
+            display: block;
+            position: relative;
+            text-align: center;
+            top: 20px;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+            a{
+                color: $primary-white;
+                padding: 1.5%;                
+            }
+        }   
     }
 }

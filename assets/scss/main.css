@@ -79,6 +79,24 @@ header .burger-menu {
   cursor: pointer;
 }
 
+@media screen and (min-width: 900px) {
+  header .burger-menu {
+    display: none;
+  }
+  header .navigate {
+    display: block;
+    position: relative;
+    text-align: center;
+    top: 20px;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+  }
+  header .navigate a {
+    color: #f5f5f5;
+    padding: 1.5%;
+  }
+}
 header {
   padding: 30px;
   background-image: url("../img/header/background-header.webp");
