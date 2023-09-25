@@ -3,13 +3,27 @@
 header{
     padding: 30px;
     background-image: url("../img/header/background-header.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .burger-menu{
+        position: absolute;
+        right: 5%;
+        top: 3%;
+    }
     h1{
         font-size: 35px;
         font-weight: bold;
-        margin: 30px 0;
+        margin: 1.6em 15%;
+        color: $primary-white;
+        font-family: $font-name;
 
     }
     p{
-        margin: 1em 0;
+        margin: 1em 5%;
+        color: $primary-white;
+        font-family: $font-text;
+
     }
 }
