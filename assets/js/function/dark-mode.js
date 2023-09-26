@@ -1,12 +1,18 @@
-const switchDark = document.getElementById("switch-dark");
-const body = document.body;
+const switchButton = document.getElementById("switch-dark");
+const theme = localStorage.getItem('theme');
 
-darkMode.addEventListener('click', () => {
-    let currentBody = body.className;
+theme && document.body.classList.add(theme);
 
-    if (body.className === "light") {
-        body.className ="dark";
-    } else if (currentBody === "dark"){
-        body.className = "light"
+darkMode = () => {
+    document.body.classList.toggle('dark-mode');
+    if (document.body.classList.contains('dark-mode')){
+        localStorage.setItem('theme', 'dark-mode');
+    } else {
+        localStorage.removeItem('theme');
     }
-});
+};
+
+switchButton.addEventListener('click', darkMode);
+
+
+export { darkMode };
