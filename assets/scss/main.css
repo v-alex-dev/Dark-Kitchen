@@ -204,7 +204,7 @@ main #shopping {
     height: 100vh;
   }
 }
-footer {
+footer .logo-footer {
   display: flex;
   justify-content: center;
   padding-top: 1rem;
