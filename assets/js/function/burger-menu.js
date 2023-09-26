@@ -5,8 +5,8 @@ const burgerMenu = () => {
 
     burgerMenu.addEventListener("click", () => {
       navigate.classList.toggle("active");
-      console.log("test");
     });
   });
 };
+
 export { burgerMenu };

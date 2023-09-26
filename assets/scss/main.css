@@ -129,6 +129,47 @@ header p {
   font-family: "Crimson Text", serif;
 }
 
+main #card {
+  background-color: bisque;
+  padding: 2em 0;
+}
+main #card article {
+  margin: 2em auto;
+  width: 50%;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 3fr 1fr 1fr;
+  box-shadow: 0 0 5px #212021;
+  transition: 1.2s;
+  border-radius: 1em;
+}
+main #card article .card-header .dishes-img {
+  width: 7em;
+  border-radius: 50%;
+  padding-top: 1em;
+}
+main #card article .card-header .dishes-img:hover {
+  width: 12em;
+  transition: 1.5s;
+}
+main #card article .card-body .title-card {
+  margin: 0 0 0 0.5em;
+}
+main #card article .card-body .price {
+  margin: 0.5em;
+}
+main #card article .card-footer {
+  margin: auto;
+}
+main #card article:hover {
+  box-shadow: 0 0 15px #212021;
+}
+
+main #shopping {
+  height: 10em;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 footer {
   display: flex;
   flex-direction: column;
