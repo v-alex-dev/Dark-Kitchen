@@ -129,7 +129,7 @@ header p {
   font-family: "Crimson Text", serif;
 }
 
-main {
+main #card {
   background-color: bisque;
   padding: 2em 0;
 }
@@ -161,6 +161,11 @@ main #card article .card-footer {
 }
 main #card article:hover {
   box-shadow: 0 0 15px #212021;
+}
+
+main #shopping {
+  height: 10em;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 footer {
