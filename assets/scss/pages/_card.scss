@@ -18,6 +18,8 @@ main{
                     // object-fit: cover;
                     .dishes-img{
                         width: 7em;
+                        border-radius: 50%;
+                        padding-top: 1em;
                         &:hover{
                             width: 12em;
                             transition: 1.5s;

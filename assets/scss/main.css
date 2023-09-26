@@ -145,6 +145,8 @@ main #card article {
 }
 main #card article .card-header .dishes-img {
   width: 7em;
+  border-radius: 50%;
+  padding-top: 1em;
 }
 main #card article .card-header .dishes-img:hover {
   width: 12em;
