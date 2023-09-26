@@ -52,27 +52,62 @@ table {
   border-spacing: 0;
 }
 
+header .navigate {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+header .navigate.active {
+  display: flex;
+}
+header .navigate a {
+  padding: 10px;
 header nav {
   text-align: center;
-}
-header nav a {
   text-decoration: none;
-  margin: 1.5%;
-  color: #f5f5f5;
-  font-size: 0.8em;
+  color: #333;
+}
+header .burger-menu {
+  position: absolute;
+  right: 4%;
+  top: 30px;
+  display: block;
+  cursor: pointer;
 }
 
+@media screen and (min-width: 900px) {
+  header .burger-menu {
+    display: none;
+  }
+  header .navigate {
+    display: block;
+    position: relative;
+    text-align: center;
+    top: 20px;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+  }
+  header .navigate a {
+    color: #f5f5f5;
+    padding: 1.5%;
+  }
+}
 header {
   padding: 30px;
-  background-image: url("../img/background-header.webp");
+  background-image: url("../img/header/background-header.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-header .burger-menu {
+header .logo-header {
   position: absolute;
-  right: 5%;
-  top: 3%;
+  width: 12em;
 }
 header h1 {
   font-size: 35px;
@@ -85,16 +120,12 @@ header p {
   margin: 1em 5%;
   color: #f5f5f5;
   font-family: "Crimson Text", serif;
-}
-
+=========
 @font-face {
   font-family: "ichikaru";
   src: url(.../../fonts/ICHIKARU.otf) format("opentype");
 }
-@font-face {
-  font-family: "mondayCoffee";
-  src: url(../../fonts/MondayCoffee.otf);
-}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -127,4 +158,39 @@ footer {
   text-decoration: none;
   font-style: none;
   color: black;
-  /*# sourceMappingURL=main.css.map */
+}
+
+#copyright {
+  padding-top: 1rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+.container-media-footer {
+  padding-top: 1rem;
+  margin: 1rem;
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.news-content {
+  margin: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.Newsletter {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.instagram, .facebook, .takeaway, .ubereats {
+  width: 25px;
+>>>>>>>>> Temporary merge branch 2
+}/*# sourceMappingURL=main.css.map */
