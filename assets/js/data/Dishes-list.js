@@ -2,7 +2,7 @@ const DishesList = [
 	{
 		id:1,
 		name: 'Sushi Salmon Teriyaki',
-		category: ['Sushi', 'Teryaki'],
+		category: ['Sushi', 'Teriyaki'],
 		ingredient: ['Salmon'],
 		url: './img/Dishes/su-sal-teriya.png',
 		price : 4.80
