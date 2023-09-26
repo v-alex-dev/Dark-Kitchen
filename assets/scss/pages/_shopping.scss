@@ -1,6 +1,14 @@
 main{
     #shopping{
-        height: 10em;
+        // height: 10em;
         background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+@include responsive-desktop{
+    #shopping{
+        height: 100vh;
+        // position: fixed;
+
     }
 }

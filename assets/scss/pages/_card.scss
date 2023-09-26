@@ -5,7 +5,7 @@ main{
         padding: 2em 0;
         
         article{
-            // border: 1px solid $primary-dark;
+            background-color: rgba(252, 244, 234, 0.4);
             margin: 2em auto;
             width: 50%;
             text-align: center;
@@ -29,9 +29,11 @@ main{
                 .card-body{
                     .title-card{
                         margin: 0 0 0 0.5em;
+                        font-family: $font-name;
                     }
                     .price{
                         margin: 0.5em;
+                        font-family: $font-text;
                     }
                 }
                 .card-footer{
@@ -42,6 +44,17 @@ main{
             box-shadow: 0 0 15px $primary-dark;
             
         }
+        }
+    }
+}
+
+@include responsive-desktop{
+    main{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        #card{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
         }
     }
 }
