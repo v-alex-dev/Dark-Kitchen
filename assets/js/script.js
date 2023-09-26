@@ -9,3 +9,4 @@ DishesList.forEach(element => {
 });
 
 burgerMenu();
+

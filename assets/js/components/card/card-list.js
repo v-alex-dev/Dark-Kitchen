@@ -36,7 +36,7 @@ const cardList = (item) => {
 
 	img.src = item.url;
 	titleCard.innerHTML = item.name;
-	price.innerHTML = item.price;
+	price.innerHTML = `${item.price.toFixed(2)} &euro;`;
 
 
 
