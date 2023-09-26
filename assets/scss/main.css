@@ -52,13 +52,21 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: "ichikaru";
+  src: url(.../../fonts/ICHIKARU.otf) format("opentype");
+}
+@font-face {
+  font-family: "mondayCoffee";
+  src: url(../../fonts/MondayCoffee.otf);
+}
 header .navigate {
   display: none;
   flex-direction: column;
   position: absolute;
   top: 60px;
   right: 0;
-  background-color: #fff;
+  background-color: #f5f5f5;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   z-index: 1000;
 }
@@ -119,6 +127,40 @@ header p {
   margin: 1em 5%;
   color: #f5f5f5;
   font-family: "Crimson Text", serif;
+}
+
+main {
+  background-color: bisque;
+  padding: 2em 0;
+}
+main #card article {
+  margin: 2em auto;
+  width: 50%;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 3fr 1fr 1fr;
+  box-shadow: 0 0 5px #212021;
+  transition: 1.2s;
+  border-radius: 1em;
+}
+main #card article .card-header .dishes-img {
+  width: 7em;
+}
+main #card article .card-header .dishes-img:hover {
+  width: 12em;
+  transition: 1.5s;
+}
+main #card article .card-body .title-card {
+  margin: 0 0 0 0.5em;
+}
+main #card article .card-body .price {
+  margin: 0.5em;
+}
+main #card article .card-footer {
+  margin: auto;
+}
+main #card article:hover {
+  box-shadow: 0 0 15px #212021;
 }
 
 footer {
