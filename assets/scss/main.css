@@ -52,13 +52,21 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: "ichikaru";
+  src: url(.../../fonts/ICHIKARU.otf) format("opentype");
+}
+@font-face {
+  font-family: "mondayCoffee";
+  src: url(../../fonts/MondayCoffee.otf);
+}
 header .navigate {
   display: none;
   flex-direction: column;
   position: absolute;
   top: 60px;
   right: 0;
-  background-color: #fff;
+  background-color: #f5f5f5;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   z-index: 1000;
 }

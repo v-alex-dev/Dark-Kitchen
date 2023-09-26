@@ -10,6 +10,7 @@ const cardList = (item) => {
 	titleCard.className = 'title-card';
 	price.className = 'price';
 	btnShop.className = 'btn-shop';
+	btnShop.id = 'btn btn-add'
 	btnShop.innerHTML = 'add'
 
 	//create header to card with card-header className
@@ -37,8 +38,6 @@ const cardList = (item) => {
 	img.src = item.url;
 	titleCard.innerHTML = item.name;
 	price.innerHTML = `${item.price.toFixed(2)} &euro;`;
-
-
 
 }
 
