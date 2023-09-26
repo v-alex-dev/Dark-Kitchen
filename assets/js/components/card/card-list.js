@@ -1,5 +1,5 @@
 const cardList = (item) => {
-	const section = document.getElementById("card");
+	const section = document.getElementById("list-card");
 	const card = document.createElement('article');
 	const img = document.createElement('img');
 	const titleCard = document.createElement('h3');

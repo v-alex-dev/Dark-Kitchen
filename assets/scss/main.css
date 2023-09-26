@@ -143,10 +143,14 @@ header p {
 }
 
 main #card {
+  display: flex;
+  flex-direction: column;
+}
+main #list-card {
   background-color: bisque;
   padding: 2em 0;
 }
-main #card article {
+main #list-card article {
   background-color: rgba(252, 244, 234, 0.4);
   margin: 2em auto;
   width: 50%;
@@ -157,27 +161,27 @@ main #card article {
   transition: 1.2s;
   border-radius: 1em;
 }
-main #card article .card-header .dishes-img {
+main #list-card article .card-header .dishes-img {
   width: 7em;
   border-radius: 50%;
   padding-top: 1em;
 }
-main #card article .card-header .dishes-img:hover {
+main #list-card article .card-header .dishes-img:hover {
   width: 12em;
   transition: 1.5s;
 }
-main #card article .card-body .title-card {
+main #list-card article .card-body .title-card {
   margin: 0 0 0 0.5em;
   font-family: "Playfair Display", serif;
 }
-main #card article .card-body .price {
+main #list-card article .card-body .price {
   margin: 0.5em;
   font-family: "Crimson Text", serif;
 }
-main #card article .card-footer {
+main #list-card article .card-footer {
   margin: auto;
 }
-main #card article:hover {
+main #list-card article:hover {
   box-shadow: 0 0 15px #212021;
 }
 
@@ -186,7 +190,7 @@ main #card article:hover {
     display: grid;
     grid-template-columns: 3fr 1fr;
   }
-  main #card {
+  main #list-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
