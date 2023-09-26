@@ -19,7 +19,7 @@ const categoryFilter = () => {
     const element = categories[i];
     const btnList = document.createElement('button');
     divCategories.appendChild(btnList);
-    btnList.id = 'btn btn-list-cat';
+    btnList.className = 'btn btn-list-cat';
     btnList.innerHTML = element;
 
 
