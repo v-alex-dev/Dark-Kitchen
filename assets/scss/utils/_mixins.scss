@@ -4,3 +4,14 @@
         @content;
     }
 }
+
+// Mixin pour les fonts
+@mixin mondayCoffee {
+    font-family: 'mondayCoffee';
+    letter-spacing: 2px;
+}
+
+@mixin ichikaru {
+    font-family: 'ichikaru';
+    letter-spacing: 3px;
+}
