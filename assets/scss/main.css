@@ -139,7 +139,8 @@ header h1 {
 header p {
   margin: 1em 5%;
   color: #f5f5f5;
-  font-family: "Crimson Text", serif;
+  font-family: "mondayCoffee";
+  letter-spacing: 2px;
 }
 
 main #card {
@@ -172,11 +173,15 @@ main #card article .card-header .dishes-img:hover {
 }
 main #card article .card-body .title-card {
   margin: 0 0 0 0.5em;
-  font-family: "Playfair Display", serif;
+  font-family: "ichikaru";
+  letter-spacing: 3px;
+  font-size: 0.8em;
 }
 main #card article .card-body .price {
   margin: 0.5em;
-  font-family: "Crimson Text", serif;
+  font-family: "ichikaru";
+  letter-spacing: 3px;
+  font-size: 0.8em;
 }
 main #card article .card-footer {
   margin: auto;

@@ -1,5 +1,4 @@
 main{
-    
     #card{
         display: flex;
         flex-direction: column;
@@ -7,7 +6,6 @@ main{
             background-color: bisque;
             padding: 2em 0;
         }
-        
         article{
             background-color: rgba(252, 244, 234, 0.4);
             margin: 2em auto;
@@ -19,7 +17,6 @@ main{
             transition: 1.2s;
             border-radius: 1em;
                 .card-header{
-                    // object-fit: cover;
                     .dishes-img{
                         width: 7em;
                         border-radius: 50%;
@@ -33,11 +30,13 @@ main{
                 .card-body{
                     .title-card{
                         margin: 0 0 0 0.5em;
-                        font-family: $font-name;
+                        @include ichikaru;
+                        font-size: 0.8em;
                     }
                     .price{
                         margin: 0.5em;
-                        font-family: $font-text;
+                        @include ichikaru;
+                        font-size: 0.8em;
                     }
                 }
                 .card-footer{
@@ -46,8 +45,7 @@ main{
 
             &:hover{
             box-shadow: 0 0 15px $primary-dark;
-            
-        }
+            }
         }
     }
 }

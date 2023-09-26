@@ -22,7 +22,7 @@ header{
     p{
         margin: 1em 5%;
         color: $primary-white;
-        font-family: $font-text;
+        @include mondayCoffee;
 
     }
 }
