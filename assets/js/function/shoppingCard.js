@@ -1,4 +1,4 @@
-import { DishesList } from "../data/Dishes-list";
+import { DishesList } from "../data/Dishes-list.js";
 
 const btnAdd = document.getElementById("btn-add");
 let order = [];
