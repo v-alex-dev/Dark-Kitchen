@@ -170,9 +170,15 @@ main #shopping {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+footer {
+  position: relative;
+  padding-top: 7rem;
+}
 footer .logo-footer {
-  display: flex;
-  justify-content: center;
+  width: 7rem;
+  position: absolute;
+  left: 29%;
+  top: 0%;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -230,4 +236,28 @@ footer .Newsletter #copyright {
   padding-top: 1rem;
   text-align: center;
   margin: 1rem;
+}
+
+@media screen and (min-width: 900px) {
+  footer .logo-footer {
+    width: 50%;
+    left: 25%;
+  }
+  footer #Nav-footer {
+    margin: 1rem;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  footer .container-media-footer {
+    width: 20%;
+    position: relative;
+    left: 72%;
+  }
+  footer .container-media-footer .instagram, footer .container-media-footer .facebook, footer .container-media-footer .takeaway, footer .container-media-footer .ubereats {
+    width: 50%;
+  }
+  footer #copyright {
+    padding-bottom: 1rem;
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */
