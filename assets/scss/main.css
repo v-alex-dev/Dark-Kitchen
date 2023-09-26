@@ -54,11 +54,11 @@ table {
 
 @font-face {
   font-family: "ichikaru";
-  src: url(.../../fonts/ICHIKARU.otf) format("opentype");
+  src: url(../fonts/ICHIKARU.otf) format("opentype");
 }
 @font-face {
   font-family: "mondayCoffee";
-  src: url(../../fonts/MondayCoffee.otf);
+  src: url(../fonts/MondayCoffee.otf);
 }
 .btn-shop {
   background-color: rgb(148, 0, 0);
@@ -206,10 +206,11 @@ main #shopping {
 }
 footer {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
-
-#Nav-footer {
+footer #Nav-footer {
   padding-top: 2rem;
   justify-content: center;
   align-content: center;
@@ -217,41 +218,32 @@ footer {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 2rem;
-  padding-bottom: 50px;
+  padding-bottom: 2rem;
 }
-
-.logo-footer {
-  text-align: center;
-  padding-bottom: 1rem;
-}
-
-#title-news {
-  text-align: center;
-  padding-bottom: 5px;
-  font-size: 20px;
-  border-bottom: 1px solid black;
-}
-
-#my-order, #food, #about, #contact {
+footer #Nav-footer #my-order, footer #Nav-footer #food, footer #Nav-footer #about, footer #Nav-footer #contact {
+  font-family: "mondayCoffee";
+  letter-spacing: 2px;
   text-decoration: none;
+  font-size: 30px;
   font-style: none;
   color: black;
 }
-
-#copyright {
-  padding-top: 1rem;
+footer .Newsletter {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+footer .Newsletter #title-news {
+  font-family: "ichikaru";
+  letter-spacing: 3px;
   text-align: center;
-  margin: 1rem;
+  padding-bottom: 5px;
+  font-size: 18px;
+  border-bottom: 1px solid black;
 }
-
-.container-media-footer {
-  padding-top: 1rem;
-  margin: 1rem;
-  display: inline-flex;
-  justify-content: space-around;
-}
-
-.news-content {
+footer .Newsletter .news-content {
   margin: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -259,15 +251,17 @@ footer {
   justify-content: center;
   gap: 10px;
 }
-
-.Newsletter {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  padding-bottom: 20px;
+footer .Newsletter .container-media-footer {
+  padding-top: 1rem;
+  margin: 1rem;
+  display: inline-flex;
+  justify-content: space-around;
 }
-
-.instagram, .facebook, .takeaway, .ubereats {
+footer .Newsletter .instagram, footer .Newsletter .facebook, footer .Newsletter .takeaway, footer .Newsletter .ubereats {
   width: 25px;
+}
+footer .Newsletter #copyright {
+  padding-top: 1rem;
+  text-align: center;
+  margin: 1rem;
 }/*# sourceMappingURL=main.css.map */
