@@ -11,8 +11,8 @@ const cardList = (item) => {
   img.className = "dishes-img";
   titleCard.className = "title-card";
   price.className = "price";
-  btnShop.className = "btn-shop";
-  btnShop.id = "btn btn-add";
+  btnShop.className = "btn btn-shop";
+  btnShop.id = "btn-add";
   btnShop.innerHTML = "add";
 
   //create header to card with card-header className
