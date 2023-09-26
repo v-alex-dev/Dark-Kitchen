@@ -20,6 +20,7 @@ const categoryFilter = () => {
     const btnList = document.createElement('button');
     divCategories.appendChild(btnList);
     btnList.className = 'btn btn-list-cat';
+    btnList.id = 'btn-effect'
     btnList.innerHTML = element;
 
 

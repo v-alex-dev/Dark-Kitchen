@@ -1,5 +1,9 @@
 //Style commun à tous les éléments
-@import '../components/buttons'
+@import '../components/buttons';
+@import '../utils/typographie';
+*{
+    @include mondayCoffee
+}
 
 .dark-mode {
     background-color: darkslategray;

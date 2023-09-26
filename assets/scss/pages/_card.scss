@@ -58,9 +58,10 @@ main{
         #list-card{
             display: grid;
             grid-template-columns: 1fr 1fr;
+            max-height: 100vh;
+            
             overflow-y: scroll;
             overflow-x: hidden;
-            height: 100vh;
         }
     }
 }
