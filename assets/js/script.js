@@ -1,13 +1,10 @@
-import { cardList } from "./components/card/card-list.js";
-import { DishesList } from "./data/Dishes-list.js";
 import { burgerMenu } from "./function/burger-menu.js"; 
+import { categoryFilter } from "./components/filter/category-filter/categoryFilter.js";
 
 
 
-DishesList.forEach((element) => {
-  cardList(element);
-});
 
 
-
+categoryFilter();
 burgerMenu();
+
