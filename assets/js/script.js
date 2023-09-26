@@ -8,4 +8,3 @@ DishesList.forEach((element) => {
 });
 
 burgerMenu();
-darkMode();
