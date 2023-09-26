@@ -33,11 +33,7 @@ const categoryFilter = () => {
       newList.forEach(list => {
         cardList(list);
       })
-      
-    })
-
-    
-    
+    });
   }
 }
 
