@@ -60,7 +60,7 @@ table {
   font-family: "mondayCoffee";
   src: url(../../fonts/MondayCoffee.otf);
 }
-.btn-shop {
+.btn {
   background-color: rgb(148, 0, 0);
   color: #f5f5f5;
   border: none;
@@ -69,7 +69,7 @@ table {
   transition: 1.2s;
   padding: 0.2em 1em;
 }
-.btn-shop:hover {
+.btn:hover {
   box-shadow: 1.5px 1.5px 1.5px #212021;
 }
 
@@ -146,11 +146,11 @@ main #card {
   display: flex;
   flex-direction: column;
 }
-main #list-card {
+main #card #list-card {
   background-color: bisque;
   padding: 2em 0;
 }
-main #list-card article {
+main #card article {
   background-color: rgba(252, 244, 234, 0.4);
   margin: 2em auto;
   width: 50%;
@@ -161,27 +161,27 @@ main #list-card article {
   transition: 1.2s;
   border-radius: 1em;
 }
-main #list-card article .card-header .dishes-img {
+main #card article .card-header .dishes-img {
   width: 7em;
   border-radius: 50%;
   padding-top: 1em;
 }
-main #list-card article .card-header .dishes-img:hover {
-  width: 12em;
+main #card article .card-header .dishes-img:hover {
+  width: 10em;
   transition: 1.5s;
 }
-main #list-card article .card-body .title-card {
+main #card article .card-body .title-card {
   margin: 0 0 0 0.5em;
   font-family: "Playfair Display", serif;
 }
-main #list-card article .card-body .price {
+main #card article .card-body .price {
   margin: 0.5em;
   font-family: "Crimson Text", serif;
 }
-main #list-card article .card-footer {
+main #card article .card-footer {
   margin: auto;
 }
-main #list-card article:hover {
+main #card article:hover {
   box-shadow: 0 0 15px #212021;
 }
 
@@ -193,6 +193,9 @@ main #list-card article:hover {
   main #list-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100vh;
   }
 }
 main #shopping {
@@ -201,7 +204,7 @@ main #shopping {
 
 @media screen and (min-width: 900px) {
   #shopping {
-    height: 100vh;
+    padding: 30px 10%;
   }
 }
 footer {
