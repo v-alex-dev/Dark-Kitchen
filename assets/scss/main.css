@@ -73,6 +73,10 @@ table {
   box-shadow: 1.5px 1.5px 1.5px #212021;
 }
 
+.btn-list-cat {
+  margin: 2em 3.5em;
+}
+
 header .navigate {
   display: none;
   flex-direction: column;
@@ -143,6 +147,13 @@ header p {
   letter-spacing: 2px;
 }
 
+#list-cat {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  transition: 5s;
+}
+
 main #card {
   display: flex;
   flex-direction: column;
@@ -207,6 +218,11 @@ main #shopping {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+@media screen and (min-width: 900px) {
+  #shopping {
+    padding: 30px 10%;
+  }
+}
 footer {
   position: relative;
   padding-top: 7rem;
