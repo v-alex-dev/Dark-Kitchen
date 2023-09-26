@@ -33,11 +33,13 @@ main{
                 .card-body{
                     .title-card{
                         margin: 0 0 0 0.5em;
-                        font-family: $font-name;
+                        @include ichikaru;
+                        font-size: 0.8em;
                     }
                     .price{
                         margin: 0.5em;
-                        font-family: $font-text;
+                        @include ichikaru;
+                        font-size: 0.8em;
                     }
                 }
                 .card-footer{
