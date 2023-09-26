@@ -260,4 +260,8 @@ footer .Newsletter #copyright {
     padding-bottom: 1rem;
     text-align: center;
   }
+}
+.dark-mode {
+  background-color: darkslategray;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
