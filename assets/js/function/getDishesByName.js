@@ -6,8 +6,8 @@ import { DishesList } from "../data/Dishes-list.js"
 	Vérification et retour d'erreur à faire si on a le temps.
 */
 const getDashiesByName = (name) => {
-	return  DishesList.filter((dishe) => name === dishe.name);
-
+	const dishe =  DishesList.filter((dishe) => name === dishe.name);
+	return dishe[0]
 }
 
 export {getDashiesByName};
