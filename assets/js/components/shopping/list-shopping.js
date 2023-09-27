@@ -3,7 +3,7 @@ const shopping = [];
 
 // Add un element sur l'évenement click un élément li contenant le name + le prix.
 const addClickHandlers = () => {
-	const btnAdd = document.querySelectorAll("#btn-add");
+  const btnAdd = document.querySelectorAll("#btn-add");
 
 	for (const item of btnAdd) {
 		item.addEventListener("click", (e) => {
@@ -55,11 +55,10 @@ const deleteClickHandlers = () => {
 
 
 const listShop = () => {
-	const shoppingList = document.querySelector('.shopping-list');
-	const list = document.createElement('ul');
+  const shoppingList = document.querySelector(".shopping-list");
+  const list = document.createElement("ul");
 
-
-	list.id = 'list-shop'
+  list.id = "list-shop";
   shoppingList.appendChild(list);
   addClickHandlers(); // Appel de la fonction pour ajouter les gestionnaires d'événements
 	deleteClickHandlers();
