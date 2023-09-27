@@ -1,33 +1,25 @@
 const darkMode = () => {
+    const switchButton = document.getElementById("switch-dark");
+    const body = document.body;
+    let logo1 = document.querySelector(".logo-footer1");
+    let logo2 = document.querySelector(".logo-footer2");
+    let facebook = document.querySelector(".facebook");
+    let instagram = document.querySelector(".instagram");
+    let takeaway = document.querySelector('.takeaway');
+    let ubereats = document.querySelector('.ubereats');
 
-const switchButton = document.getElementById("switch-dark");
-const body = document.body;
-
-
-
-switchButton.addEventListener("click", function(){
-
-    let logo1 = document.getElementsByClassName("logo-footer1");
-    let logo2 = document.getElementsByClassName("logo-footer2");
-    let newLogo1 = "./img/logo/logo-1-white.svg";
-    let newLogo2 = "./img/logo/logo-2-white.svg";
-
-    logo1.src = newLogo1;
-    logo2.src = newLogo2;
-});
-
-switchButton.addEventListener("click", () => {
-
-    body.classList.toggle("dark-mode");
-    if (body.classList.contains("dark-mode")) {
-        switchButton.textContent = "Désactiver le mode sombre";
-    } else {
-        switchButton.textContent = "Activer le mode sombre";
-    }
+    switchButton.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+        const isDarkMode = body.classList.contains("dark-mode");
+        switchButton.textContent = isDarkMode ? "Désactiver le mode sombre" : "Activer le mode sombre";
+        logo1.srcset = isDarkMode ? "./img/logo/logo-1-white.svg" : "./img/logo/logo-1.svg";
+        logo2.srcset = isDarkMode ? "./img/logo/logo-2-white.svg" : "./img/logo/logo-2.svg";
+        facebook.srcset = isDarkMode ? "./img/social-logo/facebook-red.svg" : "./img/social-logo/facebook-black.svg";
+        instagram.srcset = isDarkMode ? "./img/social-logo/instagram-red.svg" : "./img/social-logo/instagram-black.svg";
+        takeaway.srcset = isDarkMode ? "./img/social-logo/takeaway-red.svg" : "./img/social-logo/takeaway-black.svg";
+        ubereats.srcset = isDarkMode ? "./img/social-logo/ubereats-red.svg" : "./img/social-logo/ubereats-black.svg";
 
     });
 };
-
-
 
 export { darkMode };
