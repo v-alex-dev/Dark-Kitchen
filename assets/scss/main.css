@@ -266,9 +266,15 @@ main #shopping .shopping-total h3 {
 body.dark-mode {
   background-color: black !important;
   color: white !important;
+  border-color: white !important;
 }
 
 .dark-mode footer {
+  background-color: black !important;
+  color: white !important;
+}
+
+.dark-mode .menuFooter {
   background-color: black !important;
   color: white !important;
 }
@@ -295,7 +301,7 @@ footer #Nav-footer {
   gap: 2rem;
   padding-bottom: 2rem;
 }
-footer #Nav-footer #my-order, footer #Nav-footer #food, footer #Nav-footer #about, footer #Nav-footer #contact {
+footer #Nav-footer .menuFooter {
   font-family: "mondayCoffee";
   letter-spacing: 2px;
   text-decoration: none;
@@ -310,7 +316,7 @@ footer .Newsletter {
   justify-content: center;
   padding-bottom: 20px;
 }
-footer .Newsletter #title-news {
+footer .Newsletter .title-news {
   font-family: "ichikaru";
   letter-spacing: 3px;
   text-align: center;
