@@ -242,6 +242,16 @@ main #shopping {
     padding: 30px 10%;
   }
 }
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode footer {
+  background-color: black;
+  color: white;
+}
+
 footer {
   position: relative;
   padding-top: 7rem;

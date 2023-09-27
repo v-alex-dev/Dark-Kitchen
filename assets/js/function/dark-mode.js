@@ -1,17 +1,16 @@
-const switchDark = document.getElementById("switch-dark");
+const darkMode = () => {
+
+const switchButton = document.getElementById("switch-dark");
 const body = document.body;
 
-const darkMode = () => {
-    switchDark.addEventListener('click', () => {
-        let currentBody = body.className;
-    
-        if (body.className === "light") {
-            body.className ="dark";
-        } else if (currentBody === "dark"){
-            body.className = "light"
-        }
-    });
-}
+switchButton.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+    if (body.classList.contains("dark-mode")) {
+        switchButton.textContent = "Désactiver le mode sombre";
+    } else {
+        switchButton.textContent = "Activer le mode sombre";
+    }
+});
+};
 
-
-export {darkMode};
+export { darkMode };
