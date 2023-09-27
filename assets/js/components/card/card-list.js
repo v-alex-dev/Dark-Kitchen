@@ -14,6 +14,7 @@ const cardList = (item) => {
   btnShop.className = "btn btn-shop";
   btnShop.id = `btn-add`;
   btnShop.name = `${item.name}`
+
   btnShop.innerHTML = "add";
 
   //create header to card with card-header className
@@ -39,6 +40,7 @@ const cardList = (item) => {
   cardFooter.appendChild(btnShop);
 
   img.src = item.url;
+  img.alt = item.name;
   titleCard.innerHTML = item.name;
   price.innerHTML = `${item.price.toFixed(2)} &euro;`;
 };
