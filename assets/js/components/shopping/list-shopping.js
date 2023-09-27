@@ -8,14 +8,15 @@ const addClickHandlers = () => {
     item.addEventListener("click", (e) => {
       const listItem = document.createElement("li");
       const btnDelete = document.createElement("button");
-
-      btnDelete.className = "btn-delete";
-      btnDelete.innerHTML = "X";
+      const parag = document.createElement("p");
+      btnDelete.classList = "btn btn-delete";
 
       const dishe = getDashiesByName(e.target.name);
       const list = document.querySelector("#list-shop");
 
-      listItem.innerHTML = `${dishe.name}  ${dishe.price.toFixed(2)} &euro;`;
+      btnDelete.innerHTML = "X";
+      parag.innerHTML = `${dishe.name}  ${dishe.price.toFixed(2)} &euro;`;
+
       list.appendChild(listItem);
       listItem.appendChild(btnDelete);
       listItem.appendChild(parag);
@@ -23,7 +24,14 @@ const addClickHandlers = () => {
   }
 };
 
-const deleteClickHandlers = () => {};
+const deleteClickHandlers = () => {
+  const btnDelete = document.querySelectorAll(".btn-delete");
+  for (const btn of btnDelete) {
+    btn.addEventListener("click", (e) => {
+      console.log(e.target);
+    });
+  }
+};
 
 const addClickHandlersPrice = () => {
   const btnAdd = document.querySelectorAll("#btn-add");
