@@ -1,9 +1,10 @@
 main{
     #shopping{
-        padding: 2em 15%;
+        padding: 2em 10%;
         background-color: rgba(0, 0, 0, 0.5);
         color: rgb(148, 0, 0);
         @include ichikaru;
+        overflow-y: scroll;
         .shopping-list{
             h3{
                 text-align: center;
@@ -12,15 +13,19 @@ main{
                 margin-bottom: 1em;
             }
             #list-shop{
+                
                 li{
                     margin: 0.5em 0;
+                    display: flex;
+                    justify-content: space-between;
                 }
             }          
         }
         .shopping-total{
             margin-top: 2em;
+            text-align: center;
             h3{
-                text-align: center;
+                // text-align: center;
                 color: $primary-white;
                 margin-bottom: 1em;
                 font-weight: bold;
