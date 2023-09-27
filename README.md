@@ -31,4 +31,4 @@ Voici un aperçu de la structure de notre projet :
 
 ## Remerciement
 Merci d'avoir visiter notre projet.
-![Merci](https://tenor.com/view/the-office-bow-michael-scott-steve-carell-office-gif-14973267)
+![Merci](./assets/img/tenor.gif)
