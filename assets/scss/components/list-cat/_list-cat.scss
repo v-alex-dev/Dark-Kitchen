@@ -2,7 +2,11 @@
 #list-cat {
   max-width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   background-color: bisque;
+  .btn-list-cat{
+    scale: 1;
+    margin: 0.2em 0.2em;
+  }
 }
