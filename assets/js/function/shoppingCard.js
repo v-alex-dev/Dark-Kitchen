@@ -1,29 +1,19 @@
-import { DishesList } from "../data/Dishes-list.js";
+import { getDashiesByName } from "./getDishesByName.js";
 
 const shoppingCard = () => {
-  const btnAdd = document.querySelectorAll("btn-add");
-  let order = [];
+  const btnAdd = document.querySelectorAll("#btn-add");
 
-  const pricePerIndex = (index) => {
-    if (index >= 0 && index < DishesList.length) {
-      return DishesList[index].price;
-    } else {
-      return "Index invalide";
-    }
-  };
+
+  // On itère sur chaque btn et on écoute l'évenement click pour ajouter l'objet correspondant à la card dans un tableau
   for (const item of btnAdd) {
-    
+    item.addEventListener("click", (e) => {
+      const list = document.createElement('li')
+      const dishe = getDashiesByName(e.target.name)   
+      list.innerHTML = dishe.name
+      return list
+    });
   }
-
-  btnAdd.addEventListener("click", (e) => {
-    console.log(e.target.name);
-    const indexProduit = 5;
-    const prix = pricePerIndex(indexProduit);
-    console.log("Prix récupéré : " + prix);
-    order.push(prix);
-
-    console.log(order);
-  });
+ 
 };
 
 export { shoppingCard };
