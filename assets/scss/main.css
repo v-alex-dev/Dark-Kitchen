@@ -240,6 +240,7 @@ main #shopping {
 body.dark-mode {
   background-color: black !important;
   color: white !important;
+  border-color: white !important;
 }
 
 .dark-mode footer {
