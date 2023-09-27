@@ -1,5 +1,5 @@
 import { getDashiesByName } from "../../function/getDishesByName.js";
-
+const shopping = [];
 
 // Add un element sur l'évenement click un élément li contenant le name + le prix.
 const addClickHandlers = () => {
@@ -10,47 +10,49 @@ const addClickHandlers = () => {
 			const listItem = document.createElement('li');
 			const btnDelete = document.createElement('button');
 			const parag = document.createElement('p');
+			const span = document.createElement('span')
 			btnDelete.classList = 'btn btn-delete';
 			
 			const dishe = getDashiesByName(e.target.name);
 			const list = document.querySelector('#list-shop');
-			
+			shopping.push(dishe)
 			btnDelete.innerHTML = 'X';
-			parag.innerHTML = `${dishe.name}  ${dishe.price.toFixed(2)} &euro;`;
-
+			parag.innerHTML = `${dishe.name}`;
+			span.innerHTML = `${dishe.price.toFixed(2)} &euro;`
 			list.appendChild(listItem);
 			listItem.appendChild(btnDelete);
 			listItem.appendChild(parag);
+			listItem.appendChild(span)
+
+			calculateTotal();
 
 		});
 	}
+};
+const calculateTotal = () => {
+	const total = shopping.reduce((acc, dishe) => acc + dishe.price, 0);
+	const title = document.querySelector('.shopping-total h5');
+	title.innerHTML = `${total.toFixed(2)} &euro;`;
 };
 
 const deleteClickHandlers = () => {
-	const btnDelete = document.querySelectorAll('.btn-delete')
-	for (const btn  of btnDelete) {
-		btn.addEventListener('click', (e) =>{
-			console.log(e.target);
-		})
-	}
+	const list = document.querySelector('#list-shop');
+
+	list.addEventListener("click", (e) => {
+		if (e.target.classList.contains("btn-delete")) {
+			const listItem = e.target.parentNode;
+			list.removeChild(listItem);
+			const disheName = listItem.querySelector('p').textContent;
+			const disheIndex = shopping.findIndex(dishe => dishe.name === disheName);
+			if (disheIndex !== -1) {
+				shopping.splice(disheIndex, 1);
+			}
+			calculateTotal();
+		}
+		console.log(shopping);
+	});
 }
 
-const addClickHandlersPrice = () => {
-	const btnAdd = document.querySelectorAll("#btn-add");
-	const title = document.createElement('h5');
-	const list = document.querySelector('.shopping-total');
-	let total = 0;
-	list.appendChild(title);
-
-	for (const item of btnAdd) {
-		item.addEventListener("click", (e) => {
-			const dishe = getDashiesByName(e.target.name);
-			total += parseFloat(dishe.price);
-			title.innerHTML = `${total.toFixed(2)} &euro;`;
-			
-		});
-	}
-};
 
 
 const listShop = () => {
@@ -61,7 +63,8 @@ const listShop = () => {
 	list.id = 'list-shop'
   shoppingList.appendChild(list);
   addClickHandlers(); // Appel de la fonction pour ajouter les gestionnaires d'événements
-	addClickHandlersPrice();
+	deleteClickHandlers();
+	
 };
 
 export { listShop, addClickHandlers };
