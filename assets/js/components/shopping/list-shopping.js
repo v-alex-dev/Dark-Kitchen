@@ -49,7 +49,6 @@ const deleteClickHandlers = () => {
 			}
 			calculateTotal();
 		}
-		console.log(shopping);
 	});
 }
 
