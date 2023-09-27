@@ -381,6 +381,9 @@ footer .Newsletter #switch-dark {
     flex-direction: row;
     justify-content: space-around;
   }
+  footer .btn-footer {
+    margin-left: 1rem;
+  }
   footer .container-media-footer {
     width: 20%;
     position: relative;
