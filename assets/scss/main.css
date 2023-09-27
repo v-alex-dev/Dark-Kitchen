@@ -60,6 +60,11 @@ table {
   font-family: "mondayCoffee";
   src: url(../fonts/MondayCoffee.otf);
 }
+.dark-mode {
+  background-color: darkslategray;
+  color: white;
+}
+
 .btn {
   background-color: rgb(148, 0, 0);
   color: #f5f5f5;
@@ -207,6 +212,11 @@ main #shopping {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+@media screen and (min-width: 900px) {
+  #shopping {
+    padding: 30px 10%;
+  }
+}
 footer {
   position: relative;
   padding-top: 7rem;
