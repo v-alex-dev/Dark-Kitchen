@@ -345,6 +345,9 @@ footer .Newsletter .news-content {
   justify-content: center;
   gap: 10px;
 }
+footer .Newsletter .btn-footer {
+  margin-left: 1rem;
+}
 footer .Newsletter .container-media-footer {
   padding-top: 1rem;
   margin: 1rem;
