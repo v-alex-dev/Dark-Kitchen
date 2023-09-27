@@ -12,7 +12,8 @@ const cardList = (item) => {
   titleCard.className = "title-card";
   price.className = "price";
   btnShop.className = "btn btn-shop";
-  btnShop.id = "btn-add";
+  btnShop.id = `btn-add`;
+  btnShop.name = `${item.name}`
   btnShop.innerHTML = "add";
 
   //create header to card with card-header className

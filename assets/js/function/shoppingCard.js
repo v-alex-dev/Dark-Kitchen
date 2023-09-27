@@ -1,7 +1,7 @@
 import { DishesList } from "../data/Dishes-list.js";
 
 const shoppingCard = () => {
-  const btnAdd = document.getElementById("btn-add");
+  const btnAdd = document.querySelectorAll("btn-add");
   let order = [];
 
   const pricePerIndex = (index) => {
@@ -11,9 +11,12 @@ const shoppingCard = () => {
       return "Index invalide";
     }
   };
+  for (const item of btnAdd) {
+    
+  }
 
-  btnAdd.addEventListener("click", () => {
-    console.log("test");
+  btnAdd.addEventListener("click", (e) => {
+    console.log(e.target.name);
     const indexProduit = 5;
     const prix = pricePerIndex(indexProduit);
     console.log("Prix récupéré : " + prix);
