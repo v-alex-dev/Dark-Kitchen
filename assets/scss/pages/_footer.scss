@@ -1,7 +1,3 @@
-.dark-mode footer {
-    background-color: black !important;
-    color: white !important; 
-}
 
 footer{
     position: relative;
@@ -23,7 +19,7 @@ footer{
         flex-wrap: wrap;
         gap: 2rem;
         padding-bottom: 2rem;
-        #my-order, #food, #about, #contact{
+        .menuFooter{
             @include mondayCoffee;
             text-decoration: none;
             font-size: 30px;
@@ -37,7 +33,7 @@ footer{
         flex-direction: column;
         justify-content: center;
         padding-bottom: 20px;
-        #title-news{
+        .title-news{
             @include ichikaru;
             text-align: center;
             padding-bottom: 5px;
