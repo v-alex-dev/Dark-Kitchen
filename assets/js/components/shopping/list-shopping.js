@@ -22,12 +22,17 @@ const addClickHandlers = () => {
 			listItem.appendChild(btnDelete);
 			listItem.appendChild(parag);
 
-
 		});
 	}
 };
 
 const deleteClickHandlers = () => {
+	const btnDelete = document.querySelectorAll('.btn-delete')
+	for (const btn  of btnDelete) {
+		btn.addEventListener('click', (e) =>{
+			console.log(e.target);
+		})
+	}
 }
 
 const addClickHandlersPrice = () => {
