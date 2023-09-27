@@ -1,13 +1,12 @@
 body.dark-mode{
-    background-color: black !important;
+    background-color: $darkMode-dark  !important;
     color: white !important; 
-    border-color: white !important;
 }
 .dark-mode footer {
-    background-color: black !important;
+    background-color: $darkMode-dark   !important;
     color: white !important; 
 }
 .dark-mode .menuFooter{
-    background-color: black !important;
+    background-color: $darkMode-dark  !important;
     color: white !important; 
 }

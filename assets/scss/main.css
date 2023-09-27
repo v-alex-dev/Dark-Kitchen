@@ -191,7 +191,7 @@ main #card {
   flex-direction: column;
 }
 main #card #list-card {
-  background-color: bisque;
+  background-color: #E5E5CB;
   padding: 2em 0;
 }
 main #card article {
@@ -277,18 +277,17 @@ main #shopping .shopping-total h3 {
   }
 }
 body.dark-mode {
-  background-color: black !important;
+  background-color: #1A120B !important;
   color: white !important;
-  border-color: white !important;
 }
 
 .dark-mode footer {
-  background-color: black !important;
+  background-color: #1A120B !important;
   color: white !important;
 }
 
 .dark-mode .menuFooter {
-  background-color: black !important;
+  background-color: #1A120B !important;
   color: white !important;
 }
 
@@ -355,6 +354,7 @@ footer .Newsletter .instagram, footer .Newsletter .facebook, footer .Newsletter 
   width: 25px;
 }
 footer .Newsletter #copyright {
+  font-size: 12px;
   padding-top: 1rem;
   text-align: center;
   margin: 1rem;
