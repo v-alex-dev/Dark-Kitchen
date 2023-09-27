@@ -90,11 +90,6 @@ table {
   letter-spacing: 2px;
 }
 
-.dark-mode {
-  background-color: darkslategray;
-  color: white;
-}
-
 header .navigate {
   display: none;
   flex-direction: column;
@@ -243,13 +238,13 @@ main #shopping {
   }
 }
 body.dark-mode {
-  background-color: black;
-  color: white;
+  background-color: black !important;
+  color: white !important;
 }
 
 .dark-mode footer {
-  background-color: black;
-  color: white;
+  background-color: black !important;
+  color: white !important;
 }
 
 footer {
