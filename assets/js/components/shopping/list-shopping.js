@@ -17,6 +17,8 @@ const addClickHandlers = () => {
 
       listItem.innerHTML = `${dishe.name}  ${dishe.price.toFixed(2)} &euro;`;
       list.appendChild(listItem);
+      listItem.appendChild(btnDelete);
+      listItem.appendChild(parag);
     });
   }
 };
