@@ -248,7 +248,6 @@ main #shopping {
   color: rgb(148, 0, 0);
   font-family: "ichikaru";
   letter-spacing: 3px;
-  overflow-y: scroll;
 }
 main #shopping .shopping-list h3 {
   text-align: center;
@@ -274,6 +273,8 @@ main #shopping .shopping-total h3 {
 @media screen and (min-width: 900px) {
   #shopping {
     padding: 30px 10%;
+    max-height: 100vh;
+    overflow-y: scroll;
   }
 }
 body.dark-mode {
