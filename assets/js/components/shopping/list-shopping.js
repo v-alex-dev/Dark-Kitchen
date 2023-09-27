@@ -12,7 +12,7 @@ const addClickHandlers = () => {
 			const dishe = getDashiesByName(e.target.name);
 			const list = document.querySelector('#list-shop');
 
-			listItem.innerHTML = `${dishe.name}  ${dishe.price.toFixed(2)}`;
+			listItem.innerHTML = `${dishe.name}  ${dishe.price.toFixed(2)} &euro;`;
 			list.appendChild(listItem);
 		});
 	}
@@ -29,7 +29,7 @@ const addClickHandlersPrice = () => {
 		item.addEventListener("click", (e) => {
 			const dishe = getDashiesByName(e.target.name);
 			total += parseFloat(dishe.price);
-			title.innerHTML = `${total.toFixed(2)}`;
+			title.innerHTML = `${total.toFixed(2)} &euro;`;
 			
 		});
 	}

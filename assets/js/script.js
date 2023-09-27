@@ -6,17 +6,13 @@ import { listShop } from "./components/shopping/list-shopping.js";
 import { DishesList } from "./data/Dishes-list.js";
 import { cardList } from "./components/card/card-list.js";
 
-
-
-
-document.addEventListener('DOMContentLoaded', () => {
-	DishesList.forEach(element => {
-		cardList(element);
-	})
-	
-	categoryFilter();
-	burgerMenu();
-	darkMode ();
-	scrollCat();
-	listShop();
+DishesList.forEach(element => {
+	cardList(element);
 })
+
+
+burgerMenu();	
+categoryFilter();
+darkMode ();
+scrollCat();
+listShop();
