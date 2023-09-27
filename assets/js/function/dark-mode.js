@@ -14,12 +14,12 @@ const darkMode = () => {
         body.classList.toggle("dark-mode");
         const isDarkMode = body.classList.contains("dark-mode");
         switchButton.textContent = isDarkMode ? "Désactiver le mode sombre" : "Activer le mode sombre";
-        logo1.srcset = isDarkMode ? "./img/logo/logo-1-white.svg" : "./img/logo/logo-1.svg";
-        logo2.srcset = isDarkMode ? "./img/logo/logo-2-white.svg" : "./img/logo/logo-2.svg";
-        facebook.srcset = isDarkMode ? "./img/social-logo/facebook-red.svg" : "./img/social-logo/facebook-black.svg";
-        instagram.srcset = isDarkMode ? "./img/social-logo/instagram-red.svg" : "./img/social-logo/instagram-black.svg";
-        takeaway.srcset = isDarkMode ? "./img/social-logo/takeaway-red.svg" : "./img/social-logo/takeaway-black.svg";
-        ubereats.srcset = isDarkMode ? "./img/social-logo/ubereats-red.svg" : "./img/social-logo/ubereats-black.svg";
+        logo1.srcset = isDarkMode ? "./assets/img/logo/logo-1-white.svg" : "./assets/img/logo/logo-1.svg";
+        logo2.srcset = isDarkMode ? "./assets/img/logo/logo-2-white.svg" : "./assets/img/logo/logo-2.svg";
+        facebook.srcset = isDarkMode ? "./assets/img/social-logo/facebook-red.svg" : "./assets/img/social-logo/facebook-black.svg";
+        instagram.srcset = isDarkMode ? "./assets/img/social-logo/instagram-red.svg" : "./assets/img/social-logo/instagram-black.svg";
+        takeaway.srcset = isDarkMode ? "./assets/img/social-logo/takeaway-red.svg" : "./assets/img/social-logo/takeaway-black.svg";
+        ubereats.srcset = isDarkMode ? "./assets/img/social-logo/ubereats-red.svg" : "./assets/img/social-logo/ubereats-black.svg";
         card.style.backgroundColor = isDarkMode ? "#3C2A21" : "#E5E5CB";
         cat.style.backgroundColor = isDarkMode ? "#1A120B":  "#E5E5CB";
     });
