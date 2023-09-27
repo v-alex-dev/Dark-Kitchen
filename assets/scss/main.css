@@ -73,10 +73,6 @@ table {
   box-shadow: 1.5px 1.5px 1.5px #212021;
 }
 
-.btn-list-cat {
-  margin: 1em 2.5em;
-}
-
 @font-face {
   font-family: "ichikaru";
   src: url(../fonts/ICHIKARU.otf) format("opentype");
@@ -88,11 +84,6 @@ table {
 * {
   font-family: "mondayCoffee";
   letter-spacing: 2px;
-}
-
-.dark-mode {
-  background-color: darkslategray;
-  color: white;
 }
 
 header .navigate {
@@ -168,9 +159,13 @@ header p {
 #list-cat {
   max-width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   background-color: bisque;
+}
+#list-cat .btn-list-cat {
+  scale: 1;
+  margin: 0.2em 0.2em;
 }
 
 main #card {
@@ -196,10 +191,6 @@ main #card article .card-header .dishes-img {
   width: 7em;
   border-radius: 50%;
   padding-top: 1em;
-}
-main #card article .card-header .dishes-img:hover {
-  width: 10em;
-  transition: 1.5s;
 }
 main #card article .card-body .title-card {
   margin: 0 0 0 0.5em;
