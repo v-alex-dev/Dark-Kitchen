@@ -14,7 +14,7 @@ const darkMode = () => {
     switchButton.addEventListener("click", () => {
         body.classList.toggle("dark-mode");
         const isDarkMode = body.classList.contains("dark-mode");
-        switchButton.textContent = isDarkMode ? "Désactiver le mode sombre" : "Activer le mode sombre";
+        switchButton.textContent = isDarkMode ? "Disable Darkmode" : "Enable Darkmode";
         logo1.srcset = isDarkMode ? "./assets/img/logo/logo-1-white.svg" : "./assets/img/logo/logo-1.svg";
         logo2.srcset = isDarkMode ? "./assets/img/logo/logo-2-white.svg" : "./assets/img/logo/logo-2.svg";
         facebook.srcset = isDarkMode ? "./assets/img/social-logo/facebook-red.svg" : "./assets/img/social-logo/facebook-black.svg";
