@@ -1,7 +1,7 @@
 main{
     #shopping{
         padding: 2em 10%;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: $backgroundShop;
         color: rgb(148, 0, 0);
         @include ichikaru;
         overflow-y: scroll;

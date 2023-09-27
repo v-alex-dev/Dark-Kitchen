@@ -173,7 +173,7 @@ header p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: bisque;
+  background-color: #E5E5CB;
 }
 #list-cat .btn-list-cat {
   scale: 1;
@@ -244,7 +244,7 @@ main #card article:hover {
 }
 main #shopping {
   padding: 2em 10%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #8D7B68;
   color: rgb(148, 0, 0);
   font-family: "ichikaru";
   letter-spacing: 3px;
@@ -278,17 +278,17 @@ main #shopping .shopping-total h3 {
 }
 body.dark-mode {
   background-color: #1A120B !important;
-  color: white !important;
+  color: #f5f5f5 !important;
 }
 
 .dark-mode footer {
   background-color: #1A120B !important;
-  color: white !important;
+  color: #f5f5f5 !important;
 }
 
 .dark-mode .menuFooter {
   background-color: #1A120B !important;
-  color: white !important;
+  color: #f5f5f5 !important;
 }
 
 footer {
@@ -354,10 +354,17 @@ footer .Newsletter .instagram, footer .Newsletter .facebook, footer .Newsletter 
   width: 25px;
 }
 footer .Newsletter #copyright {
-  font-size: 12px;
+  font-family: "mondayCoffee";
+  letter-spacing: 2px;
   padding-top: 1rem;
   text-align: center;
   margin: 1rem;
+  margin-top: 2rem;
+}
+footer .Newsletter #switch-dark {
+  margin-top: 1rem;
+  width: 100%;
+  margin-left: 2rem;
 }
 
 @media screen and (min-width: 900px) {
@@ -381,5 +388,8 @@ footer .Newsletter #copyright {
   footer #copyright {
     padding-bottom: 1rem;
     text-align: center;
+  }
+  footer #switch-dark {
+    width: 20%;
   }
 }/*# sourceMappingURL=main.css.map */

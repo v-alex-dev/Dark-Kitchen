@@ -60,11 +60,19 @@ footer{
             width: 25px;
         }
         #copyright{
-            font-size: 12px;
+            @include mondayCoffee;
             padding-top: 1rem;
             text-align: center;
             margin: 1rem;
+            margin-top: 2rem;
         }
+        #switch-dark{
+            margin-top: 1rem;
+            width: 100%;
+            margin-left: 2rem;
+        }
+        
+        
     }
 }
 
@@ -91,6 +99,9 @@ footer{
         #copyright{
             padding-bottom: 1rem;
             text-align: center;
+        }
+        #switch-dark{
+            width: 20%;
         }
     }
 }
