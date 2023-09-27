@@ -1,18 +1,16 @@
+const darkMode = () => {
+
 const switchButton = document.getElementById("switch-dark");
-const theme = localStorage.getItem('theme');
+const body = document.body;
 
-theme && document.body.classList.add(theme);
-
-darkMode = () => {
-    document.body.classList.toggle('dark-mode');
-    if (document.body.classList.contains('dark-mode')){
-        localStorage.setItem('theme', 'dark-mode');
+switchButton.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+    if (body.classList.contains("dark-mode")) {
+        switchButton.textContent = "Désactiver le mode sombre";
     } else {
-        localStorage.removeItem('theme');
+        switchButton.textContent = "Activer le mode sombre";
     }
+});
 };
-
-switchButton.addEventListener('click', darkMode);
-
 
 export { darkMode };
