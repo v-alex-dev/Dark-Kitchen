@@ -3,7 +3,7 @@ main{
         display: flex;
         flex-direction: column;
         #list-card{
-            background-color: bisque;
+            background-color: $backgroundCard;
             padding: 2em 0;
         }
         article{
