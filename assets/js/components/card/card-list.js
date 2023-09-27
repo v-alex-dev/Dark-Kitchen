@@ -1,4 +1,4 @@
-// import { shoppingCard } from "../../function/shoppingCard";
+// import { shoppingCard } from "../../function/shoppingCard.js";
 
 const cardList = (item) => {
   const section = document.getElementById("list-card");
