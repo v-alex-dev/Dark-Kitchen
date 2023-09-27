@@ -233,7 +233,29 @@ main #card article:hover {
   }
 }
 main #shopping {
+  padding: 2em 15%;
   background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(148, 0, 0);
+  font-family: "ichikaru";
+  letter-spacing: 3px;
+}
+main #shopping .shopping-list h3 {
+  text-align: center;
+  color: #f5f5f5;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+main #shopping .shopping-list #list-shop li {
+  margin: 0.5em 0;
+}
+main #shopping .shopping-total {
+  margin-top: 2em;
+}
+main #shopping .shopping-total h3 {
+  text-align: center;
+  color: #f5f5f5;
+  margin-bottom: 1em;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 900px) {
