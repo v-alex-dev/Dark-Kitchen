@@ -30,5 +30,4 @@ Voici un aperçu de la structure de notre projet :
 
 
 ## Remerciement
-Merci d'avoir visiter notre projet.
 ![Merci](./assets/img/tenor.gif)
