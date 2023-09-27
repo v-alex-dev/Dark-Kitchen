@@ -4,7 +4,7 @@ const DishesList = [
 		name: 'Sushi Salmon Teriyaki',
 		category: ['Sushi', 'Teriyaki'],
 		ingredient: ['Salmon'],
-		url: './img/Dishes/su-sal-teriya.png',
+		url: './assets/img/Dishes/su-sal-teriya.png',
 		price : 4.80
 	},
 	{
@@ -12,7 +12,7 @@ const DishesList = [
 		name: 'Sushi Salmon',
 		category: ['Sushi'],
 		ingredient : ['Salmon'],
-		url: './img/Dishes/su-sal.png',
+		url: './assets/img/Dishes/su-sal.png',
 		price : 3.80
 	},
 	{
@@ -20,7 +20,7 @@ const DishesList = [
 		name: 'Sushi Avocado ',
 		category: ['Sushi'],
 		ingredient : ['Avocado'],
-		url: './img/Dishes/su-advo.png',
+		url: './assets/img/Dishes/su-advo.png',
 		price : 3.30
 	},
 	{
