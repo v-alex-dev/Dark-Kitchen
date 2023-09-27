@@ -9,6 +9,7 @@ const darkMode = () => {
     let ubereats = document.querySelector('.ubereats');
     let card = document.querySelector("#list-card");
     let cat = document.querySelector("#list-cat");
+    let shop = document.querySelector("#shopping");
 
     switchButton.addEventListener("click", () => {
         body.classList.toggle("dark-mode");
@@ -22,6 +23,7 @@ const darkMode = () => {
         ubereats.srcset = isDarkMode ? "./assets/img/social-logo/ubereats-red.svg" : "./assets/img/social-logo/ubereats-black.svg";
         card.style.backgroundColor = isDarkMode ? "#3C2A21" : "#E5E5CB";
         cat.style.backgroundColor = isDarkMode ? "#1A120B":  "#E5E5CB";
+        shop.style.backgroundColor = isDarkMode ? "black" : "#8D7B68";
     });
 };
 
