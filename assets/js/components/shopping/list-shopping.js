@@ -8,6 +8,11 @@ const addClickHandlers = () => {
 	for (const item of btnAdd) {
 		item.addEventListener("click", (e) => {
 			const listItem = document.createElement('li');
+			const btnDelete = document.createElement('button');
+
+			btnDelete.className = 'btn-delete';
+			btnDelete.innerHTML = 'X';
+			
 
 			const dishe = getDashiesByName(e.target.name);
 			const list = document.querySelector('#list-shop');
@@ -17,6 +22,9 @@ const addClickHandlers = () => {
 		});
 	}
 };
+
+const deleteClickHandlers = () => {
+}
 
 const addClickHandlersPrice = () => {
 	const btnAdd = document.querySelectorAll("#btn-add");
@@ -39,6 +47,8 @@ const addClickHandlersPrice = () => {
 const listShop = () => {
 	const shoppingList = document.querySelector('.shopping-list');
 	const list = document.createElement('ul');
+
+
 	list.id = 'list-shop'
   shoppingList.appendChild(list);
   addClickHandlers(); // Appel de la fonction pour ajouter les gestionnaires d'événements
