@@ -9,16 +9,20 @@ const addClickHandlers = () => {
 		item.addEventListener("click", (e) => {
 			const listItem = document.createElement('li');
 			const btnDelete = document.createElement('button');
-
-			btnDelete.className = 'btn-delete';
-			btnDelete.innerHTML = 'X';
+			const parag = document.createElement('p');
+			btnDelete.classList = 'btn btn-delete';
 			
-
 			const dishe = getDashiesByName(e.target.name);
 			const list = document.querySelector('#list-shop');
+			
+			btnDelete.innerHTML = 'X';
+			parag.innerHTML = `${dishe.name}  ${dishe.price.toFixed(2)} &euro;`;
 
-			listItem.innerHTML = `${dishe.name}  ${dishe.price.toFixed(2)} &euro;`;
 			list.appendChild(listItem);
+			listItem.appendChild(btnDelete);
+			listItem.appendChild(parag);
+
+
 		});
 	}
 };
